@@ -1,0 +1,14 @@
+@use "global" as *;
+
+.c-btn {
+  display: inline-block;
+  width: rem(235);
+  padding-top: rem(19);
+  padding-bottom: rem(18);
+  background-color: $yellow;
+  border-radius: 100vh;
+  box-shadow: 0 0 rem(5) 0 $black04;
+  font-weight: $bold;
+  letter-spacing: 0.05em;
+  text-align: center;
+}

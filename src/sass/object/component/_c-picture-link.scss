@@ -1,0 +1,51 @@
+@use "global" as *;
+@use "sass:math";
+
+.c-picture-link {
+  position: relative;
+  width: 100%;
+}
+
+
+.c-picture-link::before {
+  content:"";
+  display: block;
+  padding-top: 100% * math.div( 250, 375 );
+}
+
+.c-picture-link__image:hover::after {
+  content:"";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: $black01;
+  opacity: 0.7;
+}
+
+.c-picture-link__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.c-picture-link__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate( -50%, -50%);
+  color: $white;
+  font-size: rem(20);
+  font-family: $english-font-family;
+  font-style: italic;
+  font-weight: $bold;
+}
+
+.c-picture-link__image {
+// .c-picture-link:nth-child(1) .c-picture-link__image {
+  background-image: url(../images/service-img01@2x.jpg);
+}

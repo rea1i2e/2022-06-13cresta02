@@ -1,0 +1,14 @@
+@use "global" as *;
+@use "sass:math";
+
+.p-service__picture-link {
+  width: 100vw;
+  margin-top: rem(80);
+  margin-right: calc(50% - 50vw);
+  margin-left: calc(50% - 50vw);
+}
+
+.p-service__background-text {
+  margin-top: rem(40);
+  text-align: right;
+}

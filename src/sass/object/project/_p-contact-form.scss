@@ -1,0 +1,62 @@
+@use "global" as *;
+.p-contact-form__inner.l-inner {
+  @include mq() {
+    width: rem(700);
+  }
+}
+
+.p-contact-form__btn {
+  margin-top: rem(80);
+  text-align: center;
+}
+
+.p-contact-form__dl + .p-contact-form__dl {
+  margin-top: rem(10);
+}
+
+.p-contact-form__dt i {
+  display: none;
+}
+
+.p-contact-form__checkbox {
+  margin-top: rem(15);
+}
+
+.p-contact-form__checkbox-items {
+  @include mq() {
+    display: flex;
+  }
+}
+
+.p-contact-form__checkbox-item + .p-contact-form__checkbox-item {
+  @include mq() {
+    margin-left: rem(20);
+  }
+
+}
+
+.p-contact-form__dd input[type="text"],
+.p-contact-form__dd input[type="email"],
+.p-contact-form__dd input[type="tel"],
+.p-contact-form__dd textarea {
+  width: 100%;
+  border: 1px solid $black03;
+}
+
+.p-contact-form input[type="checkbox"] {
+  appearance: auto;
+  display: inline-block;
+  // height: rem(10);
+  // width: rem(10);
+  margin-right: rem(10);
+  border: 1px solid $black03;
+}
+
+.p-contact-form span.error_blank,
+.p-contact-form span.error_format,
+.p-contact-form span.error_match {
+	display: block;
+	color: $red;
+	margin-top: rem(5);
+}
+

@@ -1,0 +1,40 @@
+@use "global" as *;
+@use "sass:math";
+
+.p-works {
+  padding-top: rem(100);
+  padding-bottom: rem(40);
+  background-image: url(../images/works-bgi@2x.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include mq() {
+    padding-top: rem(104);
+  }
+}
+
+.p-works__section-title {
+  justify-content: right;
+}
+
+.p-works__wrapper {
+  @include mq() {
+    padding-right: rem(100);
+    padding-left: rem(100);
+  }
+}
+
+.p-works__cards {
+  margin-top: rem(50);
+}
+
+.p-works__btn {
+  text-align: center;
+  margin-top: rem(80);
+  @include mq() {
+
+  }
+}
+
+.p-works__background-text {
+  margin-top: rem(40);
+}

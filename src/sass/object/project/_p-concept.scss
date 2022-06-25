@@ -1,0 +1,19 @@
+@use "global" as *;
+@use "sass:math";
+
+.p-concept__copy {
+  margin-top: rem(50);
+  font-size: rem(20);
+  font-weight: $bold;
+  letter-spacing: math.div( 30, 20);
+  text-align: center;
+}
+
+.p-concept__media {
+  margin-top: rem(30);
+}
+
+.p-concept__background-text {
+  text-align: right;
+  margin-top: rem(40);
+}

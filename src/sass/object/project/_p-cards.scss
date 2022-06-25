@@ -1,0 +1,29 @@
+@use "global" as *;
+@use "sass:math";
+
+.p-cards {
+  width: 100%;
+  @include mq() {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.p-cards__card {
+  @include mq() {
+    width: 100% * math.div(320, 1000);
+  }
+}
+
+.p-cards__card + .p-cards__card {
+  margin-top: rem(30);
+  @include mq() {
+    margin-top: 0;
+  }
+}
+
+.p-cards__card:not(:nth-child(3n+1)) {
+  @include mq() {
+    margin-left: 100% * math.div(20, 1000);
+  }
+}

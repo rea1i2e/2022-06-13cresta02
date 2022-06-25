@@ -1,0 +1,18 @@
+@use "global" as *;
+
+.c-background-text {
+  display: inline-block;
+  color: $black02;
+  font-size: rem(40);
+  font-weight: $bold;
+  font-family: $english-font-family;
+  letter-spacing: 0.05em;
+  opacity: 0.05;
+  @include mq() {
+    font-size: rem(90);
+  }
+}
+
+.c-background-text--white {
+  color: $white;
+}

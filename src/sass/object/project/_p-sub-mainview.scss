@@ -1,0 +1,29 @@
+@use "global" as *;
+
+.p-sub-mainview {
+  position: relative;
+  background-image: url(../images/contact-page-bgi@2x.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.p-sub-mainview__page-title {
+  color: $white;
+  font-family: $english-font-family;
+  font-size: rem(30);
+  font-style: italic;
+  font-weight: $bold;
+  @include mq() {
+    font-size: rem(60);
+  }
+}
+
+.p-sub-mainview__background-text {
+  position: absolute;
+  left: rem(15);
+  bottom: rem(40)
+}
+

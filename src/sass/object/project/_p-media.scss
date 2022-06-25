@@ -1,0 +1,50 @@
+@use "global" as *;
+@use "sass:math";
+
+
+.p-media {
+  width: 100%;
+  @include mq() {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.p-media__text {
+  font-weight: $bold;
+  letter-spacing: 0.05em;
+  line-height: math.div( 30, 16);
+  @include mq() {
+    width: 100% * math.div( 440, 1100);
+  }
+
+}
+
+.p-media__image {
+  position: relative;
+  width: 100%;
+  margin-top: rem(30);
+  @include mq() {
+    width: 100% * math.div( 440, 1100);
+    margin-top: 0;
+    margin-left: 100% * math.div( 120, 1100)
+  }
+}
+
+.p-media__image::before {
+  content:"";
+  display: block;
+  padding-top: 100% * math.div( 150, 345 );
+}
+
+.p-media__image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
