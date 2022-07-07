@@ -12,6 +12,7 @@
 .p-mainview__swiper-slide {
   width: 100%;
   height: 100%;
+  // transition: .3s;
 }
 
 .p-mainview__swiper-slide img {
@@ -21,15 +22,17 @@
 
 .p-mainview__copy {
   position: absolute;
-  top: 50%;
+  top: 33.5%;
   left: 50%;
-  transform: translate( -50%, -50%);
+  transform: translateX(-50%);
+  // transform: translate( -50%, -50%);
   z-index: 1;
+  width: 100%;
   color: $white;
   text-align: center;
   @include mq() {
-    top: 70%;
-    left: 30%;
+    top: 54%;
+    left: 31.3%;
   }
 }
 
@@ -44,13 +47,14 @@
 }
 
 .p-mainview__japanese-copy {
-  margin-top: rem(59);
+  margin-top: rem(47);
   font-size: rem(30);
   // font-family: $japanese-font-family;
   font-weight: $bold;
   letter-spacing: 0.05em;
+  line-height: 1.6;
   @include mq() {
-    margin-top: rem(31);
+    margin-top: rem(10);
     font-size: rem(40);
   }
 }

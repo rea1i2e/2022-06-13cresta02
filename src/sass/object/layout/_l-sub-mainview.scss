@@ -5,4 +5,7 @@
   z-index: 0;
   width: 100%;
   height: rem(360);
+  @include mq() {
+    height: rem(453);
+  }
 }

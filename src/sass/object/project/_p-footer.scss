@@ -2,8 +2,9 @@
 @use "sass:math";
 
 .p-footer__copyright {
-  padding-top: rem(30);
-  padding-bottom: rem(30);
+  padding-top: rem(29);
+  padding-bottom: rem(29);
+  font-size: rem(14);
   font-weight: $bold;
   letter-spacing: 0.05em;
   text-align: center;

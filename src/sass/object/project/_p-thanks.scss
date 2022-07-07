@@ -1,0 +1,20 @@
+@use "global" as *;
+
+.p-thanks {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.p-thanks__description {
+  margin-top: rem(30);
+  @include mq() {
+    font-size: rem(20);
+  }
+}
+
+.p-thanks__btn {
+  margin-top: rem(50);
+}
+

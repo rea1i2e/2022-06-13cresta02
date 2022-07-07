@@ -1,0 +1,6 @@
+@use "global" as *;
+
+.l-thanks {
+  height: calc( 100vh - #{rem(360)} - #{rem(84)});
+  min-height: rem(300);
+}

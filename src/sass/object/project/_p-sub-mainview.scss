@@ -4,19 +4,24 @@
   position: relative;
   background-image: url(../images/contact-page-bgi@2x.jpg);
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   display: flex;
-  align-items: center;
+  // align-items: center;
   justify-content: center;
 }
 
 .p-sub-mainview__page-title {
+  margin-top: rem(181);
   color: $white;
   font-family: $english-font-family;
   font-size: rem(30);
   font-style: italic;
   font-weight: $bold;
+  letter-spacing: 0.1em;
+  line-height: 1;
   @include mq() {
+    margin-top: rem(197);
     font-size: rem(60);
   }
 }
@@ -24,6 +29,10 @@
 .p-sub-mainview__background-text {
   position: absolute;
   left: rem(15);
-  bottom: rem(40)
+  bottom: rem(40);
+  @include mq() {
+    left: rem(52);
+    bottom: rem(30);
+  }
 }
 

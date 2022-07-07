@@ -2,13 +2,15 @@
 @use "sass:math";
 
 .p-contact {
-  padding-top: rem(100);
+  padding-top: rem(105);
   padding-bottom: rem(40);
   background-image: url(../images/works-bgi@2x.jpg);
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   @include mq() {
-    padding-top: rem(104);
+    padding-top: rem(120);
+    padding-bottom: rem(58);
   }
 }
 
@@ -17,22 +19,28 @@
 }
 
 .p-contact__description {
-  margin-top: rem(80);
+  margin-top: rem(86);
   color: $white;
   font-weight: $bold;
   font-size: rem(20);
   letter-spacing: 0.05em;
   text-align: center;
+  @include mq() {
+    margin-top: rem(90);
+  }
 }
 
 .p-contact__btn {
   text-align: center;
-  margin-top: rem(30);
+  margin-top: rem(33);
   @include mq() {
-
+    margin-top: rem(43);
   }
 }
 
-.p-works__background-text {
+.p-contact__background-text {
   margin-top: rem(40);
+  @include mq() {
+    margin-top: rem(68);
+  }
 }

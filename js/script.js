@@ -73,10 +73,10 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 });
 
 // Swiper
-const swiper = new Swiper('.swiper', {
-  loop: true,
-  autoplay: {
-    delay: 3000,
-    disableOnInteraction: true
-  },
-});
+// const swiper = new Swiper('.swiper', {
+//   loop: true,
+//   autoplay: {
+//     delay: 3000,
+//     disableOnInteraction: true
+//   },
+// });

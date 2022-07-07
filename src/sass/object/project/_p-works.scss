@@ -2,13 +2,16 @@
 @use "sass:math";
 
 .p-works {
-  padding-top: rem(100);
+  padding-top: rem(104);
   padding-bottom: rem(40);
-  background-image: url(../images/works-bgi@2x.jpg);
+  background-image: url(../images/works-bgi@2xsp.jpg);
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   @include mq() {
-    padding-top: rem(104);
+    padding-top: rem(114);
+    padding-bottom: rem(50);
+    background-image: url(../images/works-bgi@2x.jpg);
   }
 }
 
@@ -17,24 +20,35 @@
 }
 
 .p-works__wrapper {
+  width: rem(320);
+  margin-top: rem(55);
+  margin-right: auto;
+  margin-left: auto;
   @include mq() {
+    width: 100%;
+    margin-top: rem(92);
     padding-right: rem(100);
     padding-left: rem(100);
   }
 }
 
 .p-works__cards {
-  margin-top: rem(50);
+  width: 100%;
+  // @include mq() {
+  // }
 }
 
 .p-works__btn {
   text-align: center;
-  margin-top: rem(80);
-  @include mq() {
+  margin-top: rem(78);
+  // @include mq() {
 
-  }
+  // }
 }
 
 .p-works__background-text {
   margin-top: rem(40);
+  @include mq() {
+    margin-top: rem(62);
+  }
 }

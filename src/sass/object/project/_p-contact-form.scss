@@ -1,17 +1,20 @@
 @use "global" as *;
 .p-contact-form__inner.l-inner {
   @include mq() {
-    width: rem(700);
+    width: rem(750);
   }
 }
 
-.p-contact-form__btn {
-  margin-top: rem(80);
-  text-align: center;
+.p-contact-form__dl:nth-child(2) {
+  margin-top: rem(18);
 }
 
-.p-contact-form__dl + .p-contact-form__dl {
-  margin-top: rem(10);
+.p-contact-form__dl:nth-child(n+3) {
+  margin-top: rem(21);
+}
+
+.p-contact-form__dt {
+  letter-spacing: 0.05em;
 }
 
 .p-contact-form__dt i {
@@ -19,7 +22,10 @@
 }
 
 .p-contact-form__checkbox {
-  margin-top: rem(15);
+  margin-top: rem(12);
+  @include mq() {
+    margin-top: rem(1);
+  }
 }
 
 .p-contact-form__checkbox-items {
@@ -30,33 +36,103 @@
 
 .p-contact-form__checkbox-item + .p-contact-form__checkbox-item {
   @include mq() {
-    margin-left: rem(20);
+    margin-left: rem(26);
   }
-
 }
 
 .p-contact-form__dd input[type="text"],
 .p-contact-form__dd input[type="email"],
-.p-contact-form__dd input[type="tel"],
+.p-contact-form__dd input[type="tel"] {
+  width: 100%;
+  padding: rem(3) rem(6);
+  border: 1px solid $black03;
+  line-height: 1;
+}
+
 .p-contact-form__dd textarea {
   width: 100%;
+  padding: rem(1) rem(6);
   border: 1px solid $black03;
 }
 
-.p-contact-form input[type="checkbox"] {
-  appearance: auto;
+// .p-contact-form__checkbox-item {
+//   background-color: green;
+// }
+
+.p-contact-form__checkbox label {
+  display: block;
+  height: 100%;
+  width: 100%;
+  padding-top: rem(5);
+  padding-bottom: rem(5);
+  line-height: 1;
+  letter-spacing: 0.05em;
+}
+
+
+.p-contact-form__checkbox input {
+  position: relative;
   display: inline-block;
-  // height: rem(10);
-  // width: rem(10);
-  margin-right: rem(10);
-  border: 1px solid $black03;
+  height: rem(10);
+  width: rem(10);
+  margin-left: 0;
+  margin-right: rem(8);
+  margin: 0 rem(7) 0 0;
+  // padding-left: rem(20);
+  cursor: pointer;
+  // background-color: orange;
+}
+
+.p-contact-form__checkbox input::before {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: rem(-3);
+  top: 50%;
+  transform: translateY(-50%);
+  content: "";
+  height: rem(10);
+  width: rem(10);
+  border: solid 1px $black03;
+}
+
+.p-contact-form__checkbox input::after {
+  display: block;
+  position: absolute;
+  left: 0;
+  content: "";
+  border-bottom: 2px solid $black03; /*チェックの太さ*/
+  border-left: 2px solid $black03; /*チェックの太さ*/
+  opacity: 0; /*チェック前は非表示*/
+  height: rem(5); /*チェックの高さ*/
+  width: rem(10); /*チェックの横幅*/
+  transform: rotate(-45deg);
+  // top: -7px;/*チェック時の位置調整*/
+  // left: 10px;/*チェック時の位置調整*/
+}
+
+// .p-contact-form__checkbox input:checked::before {
+//   background: blue;
+// }
+
+.p-contact-form__checkbox input:checked::after {
+  opacity: 1; /*チェック後表示*/
 }
 
 .p-contact-form span.error_blank,
 .p-contact-form span.error_format,
 .p-contact-form span.error_match {
-	display: block;
-	color: $red;
-	margin-top: rem(5);
+  display: block;
+  color: $red;
+  margin-top: rem(5);
 }
 
+.p-contact-form__btn {
+  margin-top: rem(73);
+  text-align: center;
+}
+
+// .p-contact-form__btn input[type="button"] {
+.p-contact-form__btn input {
+  color: $black02;
+}

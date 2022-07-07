@@ -33,5 +33,8 @@
 }
 
 .p-card__text {
-  padding: rem(25) rem(20);
+  min-height: rem(134);
+  padding: rem(25) rem(20) rem(20);
+  letter-spacing: 0.05em;
+  line-height: math.div( 30, 16);
 }

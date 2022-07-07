@@ -43,9 +43,30 @@
   font-family: $english-font-family;
   font-style: italic;
   font-weight: $bold;
-}
+  letter-spacing: 0.05em;
+  @include mq() {
+    font-size: rem(40);
+  }
+ }
 
 .c-picture-link__image {
-// .c-picture-link:nth-child(1) .c-picture-link__image {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+}
+
+.c-picture-link:nth-child(1) .c-picture-link__image {
   background-image: url(../images/service-img01@2x.jpg);
+
+}
+
+.c-picture-link:nth-child(2) .c-picture-link__image {
+  background-image: url(../images/service-img02@2x.jpg);
+
+}
+
+.c-picture-link:nth-child(3) .c-picture-link__image {
+  background-image: url(../images/service-img03@2x.jpg);
+
 }

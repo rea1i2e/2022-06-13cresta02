@@ -21,7 +21,6 @@
   <!-- <link rel="”icon”" href="" /> -->
   <!-- css -->
   <link rel="stylesheet" href="./css/styles.css">
-  <!-- <link rel="stylesheet" href="css/mailform.css" /> -->
   <!-- Googleフォント -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -65,56 +64,34 @@
   </header>
 
   <div class="l-sub-mainview p-sub-mainview">
+
     <h1 class="p-sub-mainview__page-title">
-      Contact
+      Thank you!
     </h1>
+
     <div class="p-sub-mainview__background-text">
       <div class="c-background-text c-background-text--white">
-        Contact us
+        Thank you
       </div>
     </div>
+
   </div>
 
-  <main class="l-contact-form p-contact-form">
-    <div class="p-contact-form__inner l-inner">
+  <main class="l-thanks p-thanks">
+    <div class="p-thanks__inner l-inner">
+      <p class="p-thanks__description">
+        お問い合わせありがとうございました。
+      </p>
 
-      <form action="./contact/php/mailform.php" method="post" id="mail_form">
-        <dl class="p-contact-form__dl">
-          <dt class="p-contact-form__dt"><i></i>お問い合わせ内容</dt>
-          <dd class="required p-contact-form__checkbox">
-            <ul class="p-contact-form__checkbox-items">
-              <li class="p-contact-form__checkbox-item">
-                <label>
-                  <input type="checkbox" name="kind[]" value="資料請求" />資料請求
-                </label>
-              </li>
-              <li class="p-contact-form__checkbox-item"><label><input type="checkbox" name="kind[]" value="お電話でのご相談を希望" />お電話でのご相談を希望</label></li>
-              <li class="p-contact-form__checkbox-item"><label><input type="checkbox" name="kind[]" value="申し込み" />申し込み</label></li>
-            </ul>
-          </dd>
-        </dl>
-        <dl class="p-contact-form__dl">
-          <dt class="p-contact-form__dt"><i></i>担当者名</dt>
-          <dd class="required p-contact-form__dd"><input type="text" name="name_1" value="" /></dd>
-        </dl>
-        <dl class="p-contact-form__dl">
-          <dt class="p-contact-form__dt"><i></i>電話番号</dt>
-          <dd class="required p-contact-form__dd"><input type="tel" name="phone" value="" /></dd>
-        </dl>
-        <dl class="p-contact-form__dl">
-          <dt class="p-contact-form__dt"><i></i>メールアドレス</dt>
-          <dd class="required p-contact-form__dd"><input type="email" name="mail_address" value="" /></dd>
-        </dl>
-        <dl class="p-contact-form__dl">
-          <dt class="p-contact-form__dt"><i></i>その他</dt>
-          <dd class="p-contact-form__dd"><textarea name="contents" cols="40" rows="7"></textarea></dd>
-        </dl>
-        <p class="p-contact-form__btn" id="form_submit">
-          <!-- <input class="c-btn" type="button" id="form_submit_button" value="Contact"  kl_vkbd_parsed="true"> -->
-          <input class="c-btn" type="button" id="form_submit_button" value="Submit">
-        </p>
-
-      </form>
+      <p class="p-thanks__description">
+        このサイトは、<br class="u-mobile">架空のデザイン会社サイトです。<br>
+        お問い合わせいただいても、<br class="u-mobile">ご返信はできません。
+      </p>
+      <div class="p-thanks__btn">
+        <a class="c-btn" href="index.html">
+          Top
+        </a>
+      </div>
 
     </div>
 

@@ -10,26 +10,34 @@
   font-size: rem(30);
   font-style: italic;
   font-weight: $bold;
+  letter-spacing: 0.1em;
   line-height: 1;
-  // text-transform: uppercase;
   @include mq() {
     font-size: rem(60);
   }
 }
 
+.c-section-title--narrow .c-section-title__text {
+  letter-spacing: 0.05em;
+  // text-transform: uppercase;
+}
+
+
 .c-section-title__line {
   display: inline-block;
   height: rem(5);
   width: rem(100);
-  margin-left: rem(30);
+  margin-left: rem(25);
   background-color: $black01;
   @include mq() {
     width: rem(200);
+    margin-left: rem(22);
   }
 }
 
-.c-section-title__line--short {
-  width: rem(80);
+.c-section-title--narrow .c-section-title__line {
+  width: rem(90);
+  margin-left: rem(32);
   @include mq() {
     width: rem(200);
   }
@@ -40,7 +48,17 @@
 }
 
 .c-section-title--white .c-section-title__line {
-  background-color: $white
+  background-color: $white;
+  margin-left: rem(31);
+  @include mq() {
+    margin-left: rem(50);
+  }
+}
+
+.c-section-title--white .c-section-title__line--narrow {
+  @include mq() {
+    margin-left: rem(34);
+  }
 }
 
 
