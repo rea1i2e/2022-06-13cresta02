@@ -27,3 +27,9 @@
     margin-left: 100% * math.div(20, 1000);
   }
 }
+
+.p-cards__card:nth-child(n+4) {
+  @include mq() {
+    margin-top: rem(20);
+  }
+}

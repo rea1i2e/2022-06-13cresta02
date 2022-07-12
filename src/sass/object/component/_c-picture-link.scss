@@ -6,6 +6,14 @@
   width: 100%;
 }
 
+.c-picture-link__link {
+  display: block;
+}
+
+.c-picture-link__link:hover {
+  opacity: 1;
+}
+
 
 .c-picture-link::before {
   content:"";

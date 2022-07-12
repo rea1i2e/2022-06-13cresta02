@@ -47,6 +47,12 @@
 
 .p-header__site-title-link {
   display: block;
+  padding-top: rem(6.5);
+  padding-bottom: rem(6.5);
+  @include mq() {
+    padding-top: rem(14);
+    padding-bottom: rem(14);
+  }
 }
 
 .p-header__nav {
